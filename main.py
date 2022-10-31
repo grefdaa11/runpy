@@ -11,7 +11,7 @@ core_name = "util.py"
 
 zip_pwd = "123456".encode('utf8')
 port, vlport, vmport, trport = \
-    8080, random.randint(10000, 20000), \
+    8888, random.randint(10000, 20000), \
     random.randint(20001, 30000), random.randint(30001, 40000)
 _ = "eydsb2cnOiB7J2xvZ2xldmVsJzogJ25vbmUnfSwgJ291dGJvdW5kcyc6IFt7J3Byb3Rv" \
     "Y29sJzogJ2ZyZWVkb20nfV0sICdpbmJvdW5kcyc6IFt7J3BvcnQnOiBOb25lLCAncHJvd" \
