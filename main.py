@@ -2,7 +2,7 @@
 import os, sys, re, glob, json, zipfile, subprocess, base64, random
 from ast import literal_eval
 
-uuid = "abcdefgh-ijkl-mnop-qrst-uvwsxyz00000"
+uuid = "abcdefgh-ijkl-mnop-qrst-uvwsxyz01234"
 vlpath = f"/{uuid}-vl"
 vmpath = f"/"
 trpath = f"/{uuid}-tr"
