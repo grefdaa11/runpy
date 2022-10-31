@@ -1,4 +1,4 @@
-FROM alpine
+FROM teddysun/xray
 
 WORKDIR /demo
 
