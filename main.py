@@ -4,7 +4,7 @@ from ast import literal_eval
 
 uuid = "abcdefgh-ijkl-mnop-qrst-uvwsxyz01234"
 vlpath = f"/{uuid}-vl"
-vmpath = f"/"
+vmpath = f""
 trpath = f"/{uuid}-tr"
 
 core_name = "util.py"
@@ -61,7 +61,7 @@ if __name__ == '__main__':
         os.remove(zfile)
     os.chmod(os.path.join(os.getcwd(), core_name), 0o777, )
     subprocess.run([os.path.join(os.getcwd(), core_name), base64.b64decode(b"cnVu").decode('utf8')],
-                   stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+#                    stderr=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
                    input=json.dumps(dic, separators=(',', ':'), indent=2).encode('utf8'))
     print("bye~")
     sys.exit(0)
