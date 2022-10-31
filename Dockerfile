@@ -1,12 +1,14 @@
 FROM teddysun/xray
+LABEL maintainer="https://github.com/jianyuann"
 
 WORKDIR /demo
 
 COPY main.py .
 COPY util.zip .
-RUN apk add --no-cache python3 && \
-    chmod +x main.py
+RUN chmod +x main.py
 ENV PORT 8888
-ENTRYPOINT ["python3","main.py"]
+ENV TZ=Asia/Shanghai
 
+
+ENTRYPOINT ["/main.py"]
 CMD ["python3","main.py"]
